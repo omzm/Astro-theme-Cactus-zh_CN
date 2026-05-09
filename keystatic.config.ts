@@ -3,7 +3,10 @@ import { config, fields, collection } from "@keystatic/core";
 export default config({
 	storage: {
 		kind: "github",
-    repo: `zouzonghao/Astro-theme-Cactus-zh_CN`
+		repo: {
+			owner: process.env.KEYSTATIC_REPO_OWNER ?? "zouzonghao",
+			name: process.env.KEYSTATIC_REPO_NAME ?? "Astro-theme-Cactus-zh_CN",
+		},
 	},
 	collections: {
 		post: collection({

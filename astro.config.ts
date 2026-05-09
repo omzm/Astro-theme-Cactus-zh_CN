@@ -24,7 +24,8 @@ import rehypeUnwrapImages from "rehype-unwrap-images";
 import rehypeKatex from "rehype-katex"; // Render LaTeX with KaTeX
 
 
-import decapCmsOauth from "astro-decap-cms-oauth";
+import react from "@astrojs/react";
+import keystatic from "@keystatic/astro";
 
 // https://astro.build/config
 export default defineConfig({
@@ -77,7 +78,7 @@ export default defineConfig({
             insertThemeColorMeta: false,
             insertManifestLink: false,
         },
-		}), decapCmsOauth()],
+		}), react(), keystatic()],
     markdown: {
         rehypePlugins: [
             [

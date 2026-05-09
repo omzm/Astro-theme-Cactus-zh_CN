@@ -3,7 +3,7 @@ import { config, fields, collection } from "@keystatic/core";
 export default config({
 	storage: {
 		kind: "github",
-    repo: `${REPO_OWNER}/${REPO_NAME}`
+    repo: `zouzonghao/Astro-theme-Cactus-zh_CN`
 	},
 	collections: {
 		post: collection({
